@@ -1,0 +1,7 @@
+<button (click)="loadimage()">加载图片</button>&nbsp;
+<button (click)="promiseAll()">all加载图片</button>&nbsp;
+<button (click)="imgUrl = null">清空图片</button>
+<br />
+<input type="输入图片路径" (keydown.enter)="loadimage($event.target.value)">
+<br />
+<img [src]="imgUrl" alt="">
